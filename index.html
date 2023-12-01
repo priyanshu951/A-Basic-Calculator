@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>My First Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>A Basic Calculator</h1>
+      <hr/><br/>
+  <div id="container">
+    <form name="calc">
+      <input type="text" name="output" placeholder="0" disabled = "disabled"/>
+      <br />
+
+      <input type="button" value="1" onclick="appendToOutput('1')"/>
+      <input type="button" value="2" onclick="appendToOutput('2')"/>
+      <input type="button" value="3" onclick="appendToOutput('3')"/>
+      <input type="button" class="operator" value="/" onclick="appendToOutput('/')"/>
+      <br />
+
+      <input type="button" value="4" onclick="appendToOutput('4')"/>
+      <input type="button" value="5" onclick="appendToOutput('5')"/>
+      <input type="button" value="6" onclick="appendToOutput('6')"/>
+      <input type="button" class="operator" value="*" onclick="appendToOutput('*')"/>
+      <br />
+
+      <input type="button" value="7" onclick="appendToOutput('7')"/>
+      <input type="button" value="8" onclick="appendToOutput('8')"/>
+      <input type="button" value="9" onclick="appendToOutput('9')"/>
+      <input type="button" class="operator" value="-" onclick="appendToOutput('-')"/>
+      <br />
+
+      <input type="button" value="(" onclick="appendToOutput('(')"/>
+      <input type="button" value=")" onclick="appendToOutput(')')"/>
+      <input type="button" value="0" onclick="appendToOutput('0')"/>
+      <input type="button" class="operator" value="+" onclick="appendToOutput('+')"/>
+      <br />
+
+      <input type="button" value="C" onclick="clearOutput()"/>
+      <input type="button" value="." onclick="appendToOutput('.')"/>
+      <input type="button" class="operator" value="=" onclick="calculateResult()"/>
+      <input type="button" class="operator" value="%" onclick="appendToOutput('%')"/>
+      <br />
+    </form>
+  </div>
+
+  <script type = "text/javascript" src = "script.js"></script>
+</body>
+</html>
